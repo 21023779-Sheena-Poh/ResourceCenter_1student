@@ -14,6 +14,8 @@ public class Chromebook extends Item{
 	public String toString(){
 		String output = "";
 		// Write your codes here
+		String info = super.toString();
+		output = String.format("%-65s %-20s", info, getOs());
 		return output;
 	}
 }
